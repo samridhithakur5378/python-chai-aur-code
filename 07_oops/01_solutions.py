@@ -3,13 +3,17 @@ class Car:
    self.brand=brand
    self.model=model
 
+  def full_name(self):
+   return f"{self.brand} {self.model}"
 
 my_car = Car("Toyota","Corolla")
 print(my_car.brand)
 print(my_car.model)
+print(my_car.full_name())
 
 my_new_car =Car("Tata","Safari")
 print(my_new_car.model)
 print(my_new_car.brand)
 
 #research a bit about self keyword and init()
+#take care of indenattions
