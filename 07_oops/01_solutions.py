@@ -33,16 +33,19 @@ class ElectricCar(Car):
 
 
 
-#my_tesla =ElectricCar("Tesla","model S","85kwh")
+my_tesla =ElectricCar("Tesla","model S","85kwh")
+
+print(isinstance(my_tesla,Car))
+print(isinstance(my_tesla,ElectricCar))
 #print(my_tesla.__brand)
 #print(my_tesla.fuel_type())
 
-my_car=Car("Tata","Safari")
+#y_car=Car("Tata","Safari")
 #my_car.model ="City"
-Car("Tata","Nexon")
+#Car("Tata","Nexon")
 
 #print(my_car.general_description())
-print(my_car.model)
+#print(my_car.model)
 
 #my_car = Car("Toyota","Corolla")
 #print(my_car.brand)
@@ -52,6 +55,20 @@ print(my_car.model)
 #my_new_car =Car("Tata","Safari")
 #print(my_new_car.model)
 #print(my_new_car.brand)
+class Battery:
+  def battery_info(self):
+    return "this is battery"
+
+class Engine:
+  def engine_info(self):
+    return "This is engine"
+
+class ElectricCarTwo(Battery,Engine,Car):
+  pass
+
+my_new_tesla =ElectricCarTwo("Tesla","Model S")
+print(my_new_tesla.engine_info())
+print(my_new_tesla.battery_info())
 
 #research a bit about self keyword and init()
 #take care of indenattions
@@ -63,3 +80,5 @@ print(my_car.model)
 #setter
 #polymorphism
 #static method available to aclss but not to instance of a class
+#is insatnce research
+#multiple inheritance
